@@ -1,5 +1,3 @@
-import java.util.InputMismatchException;
-
 public class ShoppingBag implements ICollection {
     private String[] shoppingBagItem;
     private int addCount=1;
@@ -7,9 +5,9 @@ public class ShoppingBag implements ICollection {
 
     public ShoppingBag() {
     }
-    public ShoppingBag(int shoppingBagLength) {
+    public ShoppingBag(int shoppingBagLength) throws IllegalArgumentException{
         if (shoppingBagLength <= 0) {
-            throw new InputMismatchException("The size of bag should >0.");
+            throw new IllegalArgumentException("The size of bag should >0.");
         }
         this.shoppingBagItem = new String[shoppingBagLength];
     }
