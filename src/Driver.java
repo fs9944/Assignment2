@@ -24,11 +24,20 @@ public class Driver {
         Object John = new Student("John", 4.5);
         Object Lee = new Student("Lee", 3.0);
         Object Kate = new Student("Kate", 4.0);
+
+        System.out.println(deansList.counter(((Student) Alice).getGpa()));
+        System.out.println(deansList.counter(((Student) John).getGpa()));
+        System.out.println(deansList.counter(((Student) Lee).getGpa()));
+        System.out.println(deansList.counter(((Student) Kate).getGpa()));
+
         System.out.println(deansList.add(Alice));
         System.out.println(deansList.add(John));
         System.out.println(deansList.add(Lee));
         System.out.println(deansList.add(Kate));
 
+        System.out.println(deansList.getNext());
+        System.out.println(deansList.getNext());
+        System.out.println(deansList.getNext());
         System.out.println(deansList.getNext());
         System.out.println("-------------------------------------------------");
 
